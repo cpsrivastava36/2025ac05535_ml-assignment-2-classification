@@ -104,7 +104,7 @@ streamlit run app.py
 ## Deployment
 Deploy `app.py` from the GitHub repository using Streamlit Community Cloud.
 
-**Live Streamlit App Link:** `https://2025ac05535ml-assignment-2-classification-kty2esrzqul2edkp9hbv.streamlit.app/`
+**Live Streamlit App Link:** **https://2025ac05535ml-assignment-2-classification-kty2esrzqul2edkp9hbv.streamlit.app/**
 
 ## Academic-integrity note
 The project is intentionally structured so the student can inspect, understand, test and
