@@ -24,7 +24,7 @@ The assignment requires at least 12 features and 500 instances; this dataset sat
 requirements.
 
 ## c. Github Repository Link
-**To be updated after GitHub upload:** `<YOUR_GITHUB_REPOSITORY_LINK>`
+**(https://github.com/cpsrivastava36/2025ac05535_ml-assignment-2-classification)** 
 
 ## d. Models used
 
