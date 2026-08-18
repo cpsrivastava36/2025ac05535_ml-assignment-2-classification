@@ -82,6 +82,7 @@ project-folder/
 ├── model_results.csv
 ├── metadata.json
 └── model/
+    ├── ML_Assignment_2.ipynb
     ├── logistic_regression.joblib
     ├── decision_tree.joblib
     ├── knn.joblib
