@@ -53,18 +53,18 @@ Five models explicitly listed in the assignment were implemented on the same tra
 
 | ML Model Name | Observation about model performance |
 |---|---|
-| Logistic Regression | Provides a strong linear baseline. Standardization is used before classification, which is important because the WDBC features have different scales. |
-| Decision Tree | Captures non-linear relationships and is easy to interpret. The tree is constrained with `max_depth=5` and `min_samples_leaf=3` to reduce overfitting. |
-| kNN | Performs well after feature standardization because distance-based methods are sensitive to feature scale. Its performance depends on the selected neighborhood size (`k=7`). |
-| Naive Bayes | Provides a fast probabilistic baseline. Gaussian Naive Bayes assumes conditional independence and approximately Gaussian feature distributions, so its results can differ from the tree/ensemble methods. |
-| Random Forest (Ensemble) | Combines many decision trees and generally provides robust non-linear classification performance while reducing the variance of an individual tree. |
+| Logistic Regression | Provides a strong linear baseline. Standardization is used before classification, which is important because the WDBC features have different scales. Logistic Regression achieved the best overall performance, with the highest Accuracy (98.25%), AUC (99.54%), Precision (98.61%), F1 Score (98.61%) and MCC (96.23%). This indicates that the model provides excellent discrimination and balanced classification performance on the WDBC dataset. |
+| Decision Tree | Captures non-linear relationships and is easy to interpret. The tree is constrained with `max_depth=5` and `min_samples_leaf=3` to reduce overfitting. Decision Tree achieved the lowest overall performance among the five models, with an accuracy of 90.35% and MCC of 79.69%. Although it can capture non-linear relationships, its performance was lower than the other models for this dataset.|
+| kNN | Performs well after feature standardization because distance-based methods are sensitive to feature scale. Its performance depends on the selected neighborhood size (`k=7`). KNN achieved very strong performance, with 97.37% accuracy and 98.84% AUC. It achieved the highest recall of 100%, meaning all positive-class instances in the test set were correctly identified. Its high performance is supported by feature standardization, which is important for a distance-based algorithm.|
+| Naive Bayes | Provides a fast probabilistic baseline. Gaussian Naive Bayes assumes conditional independence and approximately Gaussian feature distributions, so its results can differ from the tree/ensemble methods. Gaussian Naive Bayes achieved 93.86% accuracy and 98.78% AUC. Although its accuracy was lower than Logistic Regression and KNN, its AUC was still high, indicating strong ability to distinguish between the two classes.|
+| Random Forest (Ensemble) | Combines many decision trees and generally provides robust non-linear classification performance while reducing the variance of an individual tree. Random Forest achieved 95.61% accuracy and 99.44% AUC. It substantially outperformed the individual Decision Tree, demonstrating the benefit of combining multiple trees through an ensemble approach.|
 
 ### Overall Winner
 Based on the highest **F1 score** on the held-out test set, the current experiment's winner is:
 
 **Logistic Regression**
 
-The exact winner should be discussed using the full metric table rather than accuracy alone.
+Logistic Regression was selected as the overall winner because it achieved the highest accuracy, AUC, precision, F1 score and MCC among the evaluated models. Its recall was also very high at 98.61%. Therefore, it provided the most balanced overall performance on the selected WDBC dataset.
 
 ## Streamlit application
 The application provides:
